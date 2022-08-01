@@ -1,0 +1,27 @@
+.empty{
+  max-width: 825px;
+  height: 600px;
+  @include bdrs;
+  background-color: $whitequeen;
+  margin-top: 24px;
+  background-image: url("./../../images/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  padding: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  &__text{
+    margin-top: 16px;
+    margin-bottom: 48px;
+    @include fontstiyl(400, 16px, 23px, $lightgrey);
+  }
+  &__heading{
+    @include fontstiyl(700, 24px, 35px, $blu);
+    letter-spacing: -0.333333px;
+  }
+}
+@media only screen and (min-width:375px) {
+  
+}

@@ -1,0 +1,30 @@
+@mixin fontstiyl($weight,$size,$height,$color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+@mixin flexu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin bdrs {
+  border-radius: 10px;  
+}
+@mixin flexuchange ($flex, $column, $flex, $flex){
+  display: $flex;
+  flex-direction: $column;
+  align-items: $flex;
+  justify-content: $flex;
+}
+@mixin bg-img-befor ($width,$height) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}

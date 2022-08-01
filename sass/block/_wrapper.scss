@@ -1,0 +1,27 @@
+.wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+.right__wrapper{
+  width: 687px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+@media only screen and (max-width:768px){
+  .wrapper{
+    flex-direction: column-reverse;
+
+  }
+}
+@media only screen and (min-width:375px){
+  .right__wrapper{
+    align-items: center;
+    justify-content: center;
+  }
+}
+

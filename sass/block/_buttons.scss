@@ -1,0 +1,47 @@
+.btn{
+  max-width: 158px;
+  height: 44px;
+  border-radius: 10px;
+  padding: 12px 24px;
+  border: none;
+  
+}
+.btn2{
+  max-width: 93px;
+  height: 44px;
+  background:$hovergrey;
+  border-radius: 10px;
+  padding: 12px 24px;
+  color: $whitequeen;
+}
+.btn2:hover{
+  background: $hovergrey;
+}
+.hero__span{
+  width: 40px;
+  height: 53px;
+  @include bdrs;
+  color: $darkgrey;
+  background-color: lightgrey;
+  position: relative;
+}
+.hero__span:hover{
+  color: hovergrey;
+  background-color: $midgrey;
+} 
+.hero__span:active{
+  color: $whitequeen;
+  background-color: $blu;
+}
+.hero__span::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position:absolute;
+  background-image: url(./../../images/up.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 60%;
+  transform: translateX(60%);
+}

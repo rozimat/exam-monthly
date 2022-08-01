@@ -1,0 +1,93 @@
+
+.hero{
+  max-width: 925px;
+  height: 151px;
+  @include bdrs;
+  display: flex;
+  background-color: $whitequeen;
+  margin-top: 24px;
+  padding: 28px 32px 28px 32px;
+  position: relative;
+
+  &__span{
+    padding: 26px 8px 8px  8px;
+    text-align:center;
+    margin-right: 40px;
+  }
+
+  &__wrapper{
+    max-width: 476px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-self: flex-start;
+  }
+  &__heading{
+    @include fontstiyl(700, 15px, 26px, $blu);
+   
+  }
+   &__heading:hover{
+      color: $darkreder;
+    }
+  &__text{
+    margin-top: 4px;
+    margin-bottom: 12px;
+    @include fontstiyl(400, 13px, 23px, $lightblu);
+  }
+  &__text:hover{
+    color: $blu;
+  }
+  &__chat{
+    
+    position: absolute;
+    left: 95%;
+    align-self: center;
+   
+  }
+  &__chat::before{
+    background-image: url("./../../images/chat.png");
+    @include bg-img-befor(18px,16px);
+    right: 100%;
+    margin-right: 20px;
+  }
+  &__link{
+    padding: 5px 16px;
+    background-color: $lightskywhite;
+    @include fontstiyl(600, 13px,19px,$blu);
+    @include bdrs;
+  }
+  &__link:hover{
+    color: hovergrey;
+    background-color: $hoverblu;
+  } 
+  &__link:active{
+    color: $whitequeen;
+    background-color: $blu;
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .hero{
+   width: 375px;
+   height: 200px;
+   padding: 24px;
+   
+   flex-direction: column-reverse;
+   &__span{
+    width: 69px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 0;
+    top: 8%;
+   }
+   &__text{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   }
+    &__heading{
+      line-height: 10px;
+    }
+  } 
+}

@@ -1,0 +1,117 @@
+.feed{
+  max-width: 100%;
+  height: 100%;
+  background-color: #f2f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &__back{
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+    position: absolute;
+    top: 15%;
+  
+  }
+  &__back::before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    background-image: url("./../../images/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    bottom: 15px;
+  }
+  &__form{
+    position: relative;
+    max-width: 540px;
+    height: 657px;
+    @include bdrs;
+    background-color: $whitequeen;
+    padding: 52px 42px 40px 42px;
+  }
+  &__heading{
+    margin-bottom: 40px;
+    @include fontstiyl(700, 24px, 35px, $midgrey);
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__text{
+    @include fontstiyl(700, 14px, 20px, $midgrey);
+    letter-spacing: -0.194444px;
+  }
+  &__span{
+    @include fontstiyl(400, 14px, 20px, $lightgrey);
+    margin-top: 2px;
+    margin-bottom: 16px;
+  }
+  &__im--text, &__dropdawn{
+    max-width: 456px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $lightsky;
+    border-right: none;
+    padding: 5px;
+    margin-bottom: 24px;
+  }
+  &__list{
+    max-width: 456px;
+    height: 240px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+    border-radius: 10px;
+    bottom: 15%;
+  }
+  /*dropdawn*/
+  &__lest--item{
+    display: none;
+    padding: 12px 24px;
+    border-bottom: 1px solid black;
+    @include fontstiyl(400, 16px, 23px, $midgrey);
+  }
+ &__textarea{
+    max-width: 456px;
+    height: 96px;
+    resize: none;
+    padding: 10px;
+  }
+  &__dropdawn{
+    justify-content: center;
+    padding: 10px;
+  }
+ &__wropdawn--item:active +&__list--item{
+  display: block;
+ }
+
+}
+.btn__wrapper{
+  max-width: 290px;
+  height: 44px;
+  margin-top: 40px;
+  gap: 16px;
+
+}
+.outlineplus{
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background: 
+  radial-gradient(128.88% 128.88% at 103.9% -10.39%, 
+  #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  z-index: 1;
+  border-radius: 50%;
+  bottom: 100%;
+  transform: translateY(50%);
+}
+@media only screen and (min-width: 375px) {
+ 
+  
+
+}
